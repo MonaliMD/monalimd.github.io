@@ -6,32 +6,42 @@
 }
 
 html {
-    font-size: 15px;
+    margin:0;
+    padding: 0;
 }
 
 body {
     font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    color: #1d1d1e;
+    padding: 0;
+    margin: 0;
 }
 nav {
     ul {
         list-style-type: none;
         display: flex;
-        justify-content: flex-end;
+        justify-content: center;
         margin: 30px;
     }
 }
 header {
     background-color:white;
     text-align: center;
+    padding: 20px;
     //background-image: linear-gradient(rgb(255, 255, 255), rgba(93, 73, 182, 1));
 
     h1 {
         color: #604ab9;
     }
+
+    p {
+        font-size: 17px;
+    }
 }
 
 .profile-pic_container {
-    padding: 30px;
+    padding: 20px;
 }
 
 .profile-picture {
@@ -53,6 +63,7 @@ button {
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 30px;
+    margin-bottom: 30px;
 }
 
 .contact-link {
@@ -62,25 +73,31 @@ button {
 
 .dark-theme {
     padding: 30px 200px;
-    background-color: #604ab9;
-    display: flex;
+    //background-color: #604ab9;
+    background-image:url(../img/vector-background.png);
+    background-size: cover;
+    //display: flex;
 }
 .container {
-    display: inline-block;
+    //display: inline-block;
     //height: 400px;
-    width: 50%;
+    //width: 50%;
     background-color: white;
     text-align: center;
     border: 1px solid rgb(224, 224, 224);
-    padding: 20px;
+    padding: 30px;
+    margin-bottom: 20px;
 }
 .light-theme {
-    padding: 30px;
+    padding: 30px 100px;
 
 }
 .sub-heading {
     text-align: center;
 
+}
+.project-names {
+    padding-bottom: 15px;
 }
 .grid-col {
     display: grid;
@@ -94,8 +111,55 @@ button {
     //padding: 20px;
     max-height: 300px;
     overflow: hidden;
+    border: 1px solid #e0dee4;
 }
+.image-icon {
+    width: 60px;
+    height: 60px;
+    margin: auto;
 
+    img{
+        width: 100%;
+    }
+}
 .d-image {
     max-width: 100%;
+}
+.text-description {
+    text-align: left;
+}
+
+
+
+footer {
+    background-color:#e0dee4;
+    
+    ul {
+        margin: 0;
+    }
+}
+
+$breakpoint-tablet: 768px;
+@media  (max-width: $breakpoint-tablet) {
+    .grid-col{
+        display: block;
+    }
+
+    .grid-item {
+        margin-bottom: 30px;
+    }
+  
+}
+
+@media  (min-width: $breakpoint-tablet) {
+    
+  
+.dark-theme {
+    display: flex;
+}
+
+.container {
+    display: inline-block;
+    width: 50%;
+}
 }
