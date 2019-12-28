@@ -53,6 +53,8 @@ button {
   cursor: pointer;
   border-radius: 30px;
   margin-bottom: 30px; }
+  button:hover {
+    background-color: #09a294; }
 
 .contact-link {
   padding: 15px;
