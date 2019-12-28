@@ -1,0 +1,160 @@
+nav {
+    ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        margin: 30px;
+    }
+}
+
+header {
+    background-color:white;
+    text-align: center;
+    padding: 20px;
+
+    h1 {
+        color: #604ab9;
+    }
+
+    p {
+        font-size: 17px;
+    }
+}
+
+.profile-pic_container {
+    padding: 20px;
+}
+
+.profile-picture {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    border: 3px solid #f1f1f1;
+}
+
+button {
+    background-color: #08c1b0; /* Green */
+    border: none;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 30px;
+    margin-bottom: 30px;
+
+    &:hover {
+        background-color:#09a294 ;
+    }
+}
+
+.contact-link {
+    padding: 15px;
+    text-align: center;
+}
+
+.dark-theme {
+    padding: 30px 200px;
+    background-image:url(../img/vector-background.png);
+    background-size: cover;
+    
+    @include respond(phone) {
+        background-color: red;
+        // display: block;
+   
+        
+    }
+}
+
+.container {
+    background-color: white;
+    text-align: center;
+    border: 1px solid rgb(224, 224, 224);
+    padding: 30px;
+    margin-bottom: 20px;
+    //display: inline-block;
+ 
+    //display: inline-block;
+    
+
+   
+}
+
+.light-theme {
+    padding: 30px 100px;
+
+}
+
+.sub-heading {
+    text-align: center;
+
+}
+
+.project-names {
+    padding-bottom: 15px;
+}
+
+.grid-col {
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-gap: 50px 50px;
+    grid-template-columns: repeat(3, 1fr);
+
+    @include respond(phone) {
+        grid-template-columns: repeat(1, 1fr);
+        margin-bottom: 30px;
+    }
+}
+
+.grid-item {
+    max-height: 300px;
+    overflow: hidden;
+    border: 1px solid #e0dee4;
+
+    @include respond(phone) {
+        margin-bottom: 30px;
+    }
+}
+
+.image-icon {
+    width: 60px;
+    height: 60px;
+    margin: auto;
+
+    img {
+        width: 100%;
+    }
+}
+
+.d-image {
+    max-width: 100%;
+}
+
+.text-description {
+    text-align: left;
+}
+
+footer {
+    background-color:#e0dee4;
+    
+    ul {
+        margin: 0;
+    }
+}
+
+
+
+// @media  (min-width: $breakpoint-tablet) {
+     
+//     .dark-theme {
+//         display: flex;
+//     }
+
+//     .container {
+//         display: inline-block;
+//         width: 50%;
+//     }
+// }
