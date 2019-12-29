@@ -58,10 +58,12 @@ button {
 .dark-theme {
   padding: 30px 200px;
   background-image: url(../img/vector-background.png);
-  background-size: cover; }
-  @media (max-width: 600px) {
+  background-size: cover;
+  display: flex; }
+  @media (max-width: 768px) {
     .dark-theme {
-      background-color: red; } }
+      padding: 30px;
+      display: block; } }
 
 .container {
   background-color: white;
@@ -72,6 +74,9 @@ button {
 
 .light-theme {
   padding: 30px 100px; }
+  @media (max-width: 768px) {
+    .light-theme {
+      padding: 30px; } }
 
 .sub-heading {
   text-align: center; }
@@ -84,7 +89,7 @@ button {
   grid-auto-rows: 1fr;
   grid-gap: 50px 50px;
   grid-template-columns: repeat(3, 1fr); }
-  @media (max-width: 600px) {
+  @media (max-width: 768px) {
     .grid-col {
       grid-template-columns: repeat(1, 1fr);
       margin-bottom: 30px; } }
@@ -93,9 +98,6 @@ button {
   max-height: 300px;
   overflow: hidden;
   border: 1px solid #e0dee4; }
-  @media (max-width: 600px) {
-    .grid-item {
-      margin-bottom: 30px; } }
 
 .image-icon {
   width: 60px;

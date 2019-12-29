@@ -60,12 +60,11 @@ button {
     padding: 30px 200px;
     background-image:url(../img/vector-background.png);
     background-size: cover;
+    display: flex;
     
     @include respond(phone) {
-        background-color: red;
-        // display: block;
-   
-        
+        padding: 30px;
+        display: block;   
     }
 }
 
@@ -75,17 +74,14 @@ button {
     border: 1px solid rgb(224, 224, 224);
     padding: 30px;
     margin-bottom: 20px;
-    //display: inline-block;
- 
-    //display: inline-block;
-    
-
-   
 }
 
 .light-theme {
     padding: 30px 100px;
 
+    @include respond(phone) {
+        padding: 30px;
+    }
 }
 
 .sub-heading {
@@ -113,10 +109,6 @@ button {
     max-height: 300px;
     overflow: hidden;
     border: 1px solid #e0dee4;
-
-    @include respond(phone) {
-        margin-bottom: 30px;
-    }
 }
 
 .image-icon {
@@ -144,17 +136,3 @@ footer {
         margin: 0;
     }
 }
-
-
-
-// @media  (min-width: $breakpoint-tablet) {
-     
-//     .dark-theme {
-//         display: flex;
-//     }
-
-//     .container {
-//         display: inline-block;
-//         width: 50%;
-//     }
-// }
