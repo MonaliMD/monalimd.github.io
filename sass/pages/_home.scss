@@ -98,6 +98,7 @@ button {
     grid-auto-rows: 1fr;
     grid-gap: 50px 50px;
     grid-template-columns: repeat(3, 1fr);
+    box-shadow: 0 1px 5px rgba(27,31,35,.15);
 
     @include respond(phone) {
         grid-template-columns: repeat(1, 1fr);
